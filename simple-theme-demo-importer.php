@@ -3,7 +3,7 @@
 * Plugin Name: Simple Theme Demo Importer
 * Plugin URI: https://wordpress.org/plugins/simple-theme-demo-importer
 * Description: Simple Theme Demo Importer.
-* Version: 1.1.0
+* Version: 1.1.1
 * Author: Tristup Ghosh
 * Author URI: http://www.tristupghosh.com
 * Text Domain: simple_theme_demo_importer
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) )
 }
 if ( ! defined( 'SIMPLE_THEME_DEMO_IMPORT_PLUGIN_VERSION' ) ) 
 {
-	define( 'SIMPLE_THEME_DEMO_IMPORT_PLUGIN_VERSION', '1.0.4' );
+	define( 'SIMPLE_THEME_DEMO_IMPORT_PLUGIN_VERSION', '1.1.1' );
 }
 if ( ! defined( 'SIMPLE_THEME_DEMO_IMPORT_PLUGIN' ) ) 
 {
@@ -560,14 +560,17 @@ class simple_theme_demo_importer
 new simple_theme_demo_importer();
 
 
+function appsero_init_tracker_simple_theme_demo_importer() {
 
+    if ( ! class_exists( 'Appsero\Client' ) ) {
+      require_once _DIR_ . '/appsero/src/Client.php';
+    }
 
-function abcd()
-{
-	$screen = get_current_screen();
-	if ( $screen->base == 'edit' && $screen->post_type=='post' ) 
-	{
-		wp_enqueue_script('aaaa',plugins_url('js/my-custom-posts-script.js',__FILE__));
-	}
+    $client = new Appsero\Client( 'e1496b90-be48-49d2-8923-55b5df5842c8', 'Simple Theme Demo Importer Plugin', _FILE_ );
+
+    // Active insights
+    $client->insights()->init();
+
 }
-add_action( 'admin_enqueue_scripts', 'abcd');
+
+appsero_init_tracker_simple_theme_demo_importer();
