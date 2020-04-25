@@ -563,7 +563,7 @@ new simple_theme_demo_importer();
 function appsero_init_tracker_simple_theme_demo_importer() {
 
     if ( ! class_exists( 'Appsero\Client' ) ) {
-      require_once _DIR_ . '/appsero/src/Client.php';
+      require_once plugin_dir_path( __FILE__ ). '/appsero/src/Client.php';
     }
 
     $client = new Appsero\Client( 'e1496b90-be48-49d2-8923-55b5df5842c8', 'Simple Theme Demo Importer Plugin', _FILE_ );
