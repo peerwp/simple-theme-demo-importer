@@ -1,0 +1,265 @@
+.demo_list_item {
+    width: 24%;
+    display: inline-block;
+    margin: 0 7px;
+    background: #fff;
+}
+
+.demo_list_item:first-child{
+    margin-left:0px; 
+}
+.demo_list_item:nth-child(4){
+    margin-right:0px; 
+}
+
+.demo_list_item img {
+    width: 100%;
+}
+@media all and (max-width: 699px) and (min-width: 620px) {
+
+    .demo_list_item {
+        width: 24.2%;
+        display: inline-block;
+        margin: 0 3px;
+        background: #fff;
+    }
+}
+@media all and (max-width: 619px) and (min-width: 520px) {
+
+    .demo_list_item {
+        width: 49%;
+        display: inline-block;
+        margin: 2px 2px;
+        background: #fff;
+    }
+    .demo_list_item:nth-child(2){
+        margin-right:0px; 
+    }
+     .demo_list_item:nth-child(1){
+        margin-left:0px; 
+    }
+
+}
+.content_area {
+    display: block;
+    padding: 20px 10px;
+}
+
+.content_area  a {
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.content_area  a.view_burtton {
+    color: #000;
+    border: 1px solid;
+}
+
+.content_area  a.import_burtton {
+    color: #fff;
+    border: 1px solid #00bae7;
+    background: #00bae7;
+    margin-right: 0 ;
+}
+
+.content_area .buttons {
+    float: right;
+}
+
+.content_area span {
+    font-size: 15px;
+    font-weight: bold;
+}
+.content_area > a {
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.content_area > a.view_burtton {
+    color: #000;
+    border: 1px solid;
+}
+
+.content_area > a.import_burtton {
+    color: #fff;
+    border: 1px solid #00bae7;
+    background: #00bae7;
+    margin-right: 0 ;
+}
+
+.content_area .buttons {
+    float: right;
+}
+
+
+    .loader_wrapper{
+        display:none;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.57);
+    }
+
+    .loader{
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #3498db;
+        border-radius: 150%;
+        width: 20px;
+        height: 20px;
+        animation: spin 2s linear infinite;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+
+    .demo_list_item {
+        position: relative;
+    }
+
+    @-moz-keyframes spin {
+        0% {
+
+            transform: rotate(0deg);
+        }
+        100% {
+
+            transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+
+            transform: rotate(0deg);
+        }
+        100% {
+
+            transform: rotate(360deg);
+        }
+    }
+
+    @-ms-keyframes spin {
+        0% {
+
+            transform: rotate(0deg);
+        }
+        100% {
+
+            transform: rotate(360deg);
+        }
+    }
+
+    @-o-keyframes spin {
+        0% {
+
+            transform: rotate(0deg);
+        }
+        100% {
+
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+
+            transform: rotate(0deg);
+        }
+        100% {
+
+            transform: rotate(360deg);
+        }
+    }
+    .content_area a.import_burtton:hover {
+        background: #fff;
+        color: #00bae7;
+    }
+
+    .ctexts {
+       color: #ffffff;
+       font-size: 19px;
+       width: 100%;
+       position: absolute;
+       left: 5%;
+       top: 39%;
+       font-weight: bold;
+       letter-spacing: 2px;
+    }
+
+    .stdi-wrapper
+    {
+        background: #9695951f;
+        padding: 20px;
+    }
+    .stdi-notice
+    {
+       margin: 4px 0px 2px !important;
+    }
+    .stdi_imported
+    {
+        border: 1px solid #109800;
+        padding: 5px;
+        background: #67a700;
+        color: #ffffff;
+    }
+    .stdi_form_element_wrapper
+    {
+        width: 100%;
+    }
+    .stdi_form_txt_element
+    {
+        width: 75%;
+        padding: 8px;
+    }
+    .stdi_form_btn_element
+    {
+        padding: 7px;
+        width: 23%;
+    }
+    .stdi-footer
+    {
+        background: #ffffff;
+        padding: 10px 20px;
+    }
+
+    #stdi-promotional-offer-notice p{
+        color: #000;
+        font-size: 14px;
+        margin-bottom: 10px;
+        -webkit-text-shadow: 0.1px 0.1px 0px rgba(250, 250, 250, 0.24);
+        -moz-text-shadow: 0.1px 0.1px 0px rgba(250, 250, 250, 0.24);
+        -o-text-shadow: 0.1px 0.1px 0px rgba(250, 250, 250, 0.24);
+        text-shadow: 0.1px 0.1px 0px rgba(250, 250, 250, 0.24);
+        padding-left: 30px;
+    }
+    #stdi-promotional-offer-notice span.dashicons-megaphone 
+    {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        color: #0073aa;
+        font-size: 36px;
+        transform: rotate(-21deg);
+    }
+    .stdi-rate
+    {
+        font-size: 15px;
+        color: #ff9901;
+        text-decoration: none;
+    }
+    .stdi-notice .stdi-rate
+    {
+        font-size: 15px;
+        color: #ff9901;
+        text-decoration: none;
+        width: auto;
+    }

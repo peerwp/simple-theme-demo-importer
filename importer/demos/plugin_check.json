@@ -1,0 +1,12 @@
+[{
+   "plugin_class":"Vc_Manager",
+   "name": "WP Bakery"
+},
+{
+    "plugin_class":"RevSlider",
+    "name": "Revolution Slider"
+},
+{
+    "plugin_class":"WooCommerce",
+    "name": "WooCommerce"
+}]

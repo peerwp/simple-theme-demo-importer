@@ -1,0 +1,14 @@
+{
+	"Demo Name": "Main",
+	"demo_label":"Main Demo",
+	"menus":[{
+				"location":"primary",
+				"name":"Creative Agency: Header Menu"
+			},
+			{
+				"location":"footer",
+				"name":"Creative Agency: Footer Menu"
+			}],
+	"front_page":"Creative: Home Page",
+	"screenshot":"screenshot.png"
+}
